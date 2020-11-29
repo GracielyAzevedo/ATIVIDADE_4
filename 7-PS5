@@ -1,28 +1,29 @@
-programa
-{
+programa {
 	
-	funcao inicio()
-	{
-		real comprimento
-		real largura
-		real area 
+	inclua biblioteca Matematica --> mat
 
+	funcao inicio() {
 		
-		escreva("Qual o comprimento do gramado? ")
-		leia(comprimento)
+    real dinheiro, dolar, hp, conta
+    
+    dolar = 5.40
+    hp = 50
+    conta = dolar * 1300
 
-		escreva("Qual a largura do gramado? ")
-		leia(largura)
-
-		area = comprimento * largura
-
-		escreva("A área do gramado: ", largura * comprimento, "\n")
-
-		escreva("O dobro da gramado: ", area  * 2, "\n")
-
-		escreva("Em centímetros o gramado tem: ", area * 2 * 100)
-
-
-		
+    conta = mat.arredondar(conta, 3)
+    
+    escreva("Quantos reais voce tem guardado? ")
+    leia(dinheiro)
+    se (dinheiro > conta) {
+        escreva("Dá para comprar um PS5 e ainda sobra ",dinheiro - conta "")
+    }
+    se (dinheiro == conta) {
+        escreva("Já dá pra comprar um PS5 mas não sobra nada")
+    }
+    se (dinheiro < conta){ 
+    escreva("Falta ", conta - dinheiro, " reais pra você comprar um PS5")
+    }
+	escreva("\nO valor do PS5 dá para comprar ", conta / hp, " livros do Harry Potter e a Ordem da Fênix")
+    
 	}
 }
