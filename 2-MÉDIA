@@ -3,17 +3,28 @@ programa
 	
 	funcao inicio()
 	{
+		inteiro n1
+		inteiro n2
+		inteiro n3
+		inteiro n4
+		inteiro total
+		inteiro media
 
-		real livro1 = 26.90 
-		real livro2 = 34.10
-		real livro3 = 29.90
-		real livro4 = 26.90
-		real livro5 = 50.00
-		real livro6 = 26.90
-		inteiro = total 
+		escreva("Primeira nota?: ")
+		leia(n1)
 
-		total = livro1+livro2+livro3+livro4+livro5+livro6
+		escreva("Segunda nota?: ")
+		leia(n2)
 
-		escreva("O valor de todos os livros: ", total, " reais")
+		escreva("Terceira nota?: ")
+		leia(n3)
+
+		escreva("Quarta nota?: ")
+		leia(n4)
+
+		total = n1 + n2 + n3 + n4
+		media = total / 4
+
+		escreva("Sua nota final: ", media = total / 4)
 	}
 }
